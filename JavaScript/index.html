@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        h3 {
+            margin-left: 70px;
+        }
+
+        #capa {
+            border: 1px solid;
+            min-height: 150px;
+            width: 14.5%;
+            background: rgba(128, 128, 128,.3);
+            box-shadow:10px 10px 5px; 
+           
+        }
+
+        #enviar
+        {
+            background:rgba(0, 255, 33,.3)
+        }
+
+        #borrar
+        {
+            background:rgba(255, 0, 0,.3);
+        }
+    </style>
+
+</head>
+<body>
+
+    <h3>Mi agenda</h3>
+    <div id="capa"></div>
+    <br /><br />
+    <input type="text" id="nombre" />
+    <button type="button" id="enviar" onclick="enviar()">Añadir</button>
+    <br /><br />
+    <input type="text" id="indice" />
+    <button type="button" id="borrar" onclick="borrar()">Borrar</button>
+
+    <script>
+        var nombres = [];
+        var capa = document.getElementById("capa");
+
+        function enviar() {
+            var nombre = document.getElementById("nombre");
+
+            capa.innerHTML = "";
+            nombres.push(nombre.value);
+
+            visualizar();
+
+            nombre.value = "";
+            nombre.focus();
+        }
+
+        function borrar() {
+            var indice = document.getElementById("indice");
+            var posReal = indice.value - 1;
+
+            capa.innerHTML = "";
+
+            if (!isNaN(indice.value))
+                (indice.value > 0 && indice.value <= nombres.length) ? nombres.splice(posReal, 1) : alert("El indice no se encuentra en la lista");
+            else
+                alert("No ha escrito un numero. Vuelva a intentarlo");
+
+            visualizar();
+
+            indice.value = "";
+            indice.focus();
+
+        }
+
+        function visualizar() {
+            for (var i = 0; i < nombres.length; i++) {
+                capa.innerHTML += nombres[i] + "<br />";
+            }
+        }
+    </script>
+</body>
+</html>
