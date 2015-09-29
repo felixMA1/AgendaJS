@@ -27,5 +27,5 @@ document.getElementById("btn2").onclick = saludando;
 
         document.getElementById("btn2").onclick = saludo();
 
-            -Aqui se ejecutaria al cargar la pagina el codigo. Y al pulsar el boton no se ejecutaria el codigo.
+            -Aqui se ejecutaria al cargar la pagina el codigo. Y al pulsar el boton no se ejecutaria el codigo
 */
