@@ -72,6 +72,8 @@
     <Content Include="Funciones\Practica\index.html" />
     <Content Include="Funciones\Practica\styles.css" />
     <Content Include="index.html" />
+    <Content Include="Objetos\index.html" />
+    <Content Include="Objetos\objects.js" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
