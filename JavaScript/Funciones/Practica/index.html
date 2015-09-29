@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="styles.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <div id="container">
+
+        <div id="izq">
+            <label for="num1">Numero 1</label>
+            <input type="text" id="num1"  autofocus/>
+            <br /><br />
+
+            <div id="operando"></div>
+            <br /><br />
+
+            <label for="num2">Numero 2</label>
+            <input type="text" id="num2" />
+            <br /><br />
+
+            <div id="igual"></div>
+            <br /><br />
+
+            <label for="resultado">Resultado</label>
+            <input type="text" id="resultado" readonly disabled/>
+            <br /><br />
+
+            <button type="button" id="limpiar">Limpiar</button>
+        </div>
+
+        <div id="dcha">
+            <button type="button" id="suma">+</button>
+            <button type="button" id="resta">-</button>
+            <br />
+            <button type="button" id="multiplicacion">*</button>
+            <button type="button" id="division">/</button>
+        </div>
+
+    </div>
+
+    <script src="funciones.js"></script>
+</body>
+</html>

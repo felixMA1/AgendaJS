@@ -68,6 +68,9 @@
   <ItemGroup>
     <Content Include="Funciones\Funciones.js" />
     <Content Include="Funciones\index.html" />
+    <Content Include="Funciones\Practica\funciones.js" />
+    <Content Include="Funciones\Practica\index.html" />
+    <Content Include="Funciones\Practica\styles.css" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
