@@ -66,6 +66,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Ajax\funciones.js" />
+    <Content Include="Ajax\index.html" />
+    <Content Include="Ajax\Practica\estilos.css" />
+    <Content Include="Ajax\Practica\funciones.js" />
+    <Content Include="Ajax\Practica\index.html" />
+    <Content Include="DOM\Adidas-Logo.png" />
+    <Content Include="DOM\funciones.js" />
+    <Content Include="DOM\index.html" />
     <Content Include="Funciones\Funciones.js" />
     <Content Include="Funciones\index.html" />
     <Content Include="Funciones\Practica\funciones.js" />

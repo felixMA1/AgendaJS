@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="estilos.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+            <label for="nombre">Nombre</label>
+            <br />
+            <input type="text" id="nombre" placeholder="Nombre" />
+            <br />
+
+            <label for="nombre">Duracion</label>
+            <br />
+            <input type="text" id="duracion" placeholder="Duracion" />
+            <br />
+
+            <button type="button" id="enviar">Enviar</button>
+
+        </div>
+        <div id="right">
+            <table>
+                <thead>
+                    <tr id="caption">
+                        <th>Nombre</th>
+                        <th>Duracion</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot><tr><td colspan="2" style="text-align: center;"><button type="button" id="refrescar">Refrescar</button></td></tr></tfoot>
+            </table>
+        </div>
+
+
+        <input type="month" itemscope="numeric" />
+
+        <script src="funciones.js"></script>
+    </div>
+</body>
+</html>

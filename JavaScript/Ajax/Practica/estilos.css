@@ -1,0 +1,25 @@
+﻿body {
+    margin:0;
+}
+
+#container
+{
+    margin:0 auto;
+    width:50%;
+}
+
+#left
+{
+    border:1px solid;
+    float:left;
+}
+
+#enviar
+{
+    margin-top:10px;
+}
+
+table,tr,th,td
+{
+    /*border:1px solid;*/
+}

@@ -120,8 +120,11 @@ function Automovil(nombre, apellidos, edad, peso) {
 }
 
 
-Coche = function (peso) {
-    this.peso = peso;
+Coche = function (nombre, apellidos, edad, peso) {
+    this.nombre = nombre || "";
+    this.apellidos = apellidos || "";
+    this.edad = edad || 0;
+    this.peso = peso || 0;
     this.getPesoTexto = function () {
         if (this.peso < 5)
             return "suspenso";
@@ -131,11 +134,15 @@ Coche = function (peso) {
     }
 }
 
+//Aqui accedo a la clase Automovil
 Coche.prototype = new Automovil;
+//Aqui acceso al constructor de Automovil
 Coche.prototype.constructor = Coche;
 
 var coche2 = new Coche(1000);
+coche2.apellidos = "Audi";
 
 
 alert(coche2.peso);
+alert(coche2.apellidos);
 console.log(coche2 instanceof Automovil);
